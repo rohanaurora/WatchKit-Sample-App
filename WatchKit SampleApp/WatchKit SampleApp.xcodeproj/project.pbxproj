@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD0DFAF31A21AE7E0042959A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0DFAF21A21AE7E0042959A /* Images.xcassets */; };
+		BD0DFB521A21AFEC0042959A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0DFB511A21AFEC0042959A /* Images.xcassets */; };
 		BD291F751A1F099500675F33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD291F741A1F099500675F33 /* main.m */; };
 		BD291F781A1F099500675F33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD291F771A1F099500675F33 /* AppDelegate.m */; };
 		BD291F7B1A1F099500675F33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD291F7A1A1F099500675F33 /* ViewController.m */; };
@@ -64,7 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BD0DFAF21A21AE7E0042959A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BD0DFB511A21AFEC0042959A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BD291F6F1A1F099500675F33 /* WatchKit SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit SampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD291F731A1F099500675F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD291F741A1F099500675F33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				BD291FB81A1F09C500675F33 /* Interface.storyboard */,
-				BD0DFAF21A21AE7E0042959A /* Images.xcassets */,
+				BD0DFB511A21AFEC0042959A /* Images.xcassets */,
 				BD291FB61A1F09C500675F33 /* Supporting Files */,
 			);
 			path = "WatchKit SampleApp Watch App";
@@ -384,7 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD291FB91A1F09C500675F33 /* Interface.storyboard in Resources */,
-				BD0DFAF31A21AE7E0042959A /* Images.xcassets in Resources */,
+				BD0DFB521A21AFEC0042959A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
