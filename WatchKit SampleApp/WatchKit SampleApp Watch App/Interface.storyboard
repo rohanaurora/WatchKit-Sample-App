@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jty-7c-R3J">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <imageView alignment="center" image="sunny" id="KK8-aT-DxT"/>
+                        <imageView alignment="center" image="rainy" id="KK8-aT-DxT"/>
                         <separator alignment="left" id="PSs-jv-TVI"/>
                         <label alignment="center" text="Weather Outside" id="5qS-q0-keh"/>
                         <slider width="1" alignment="left" value="0.5" steps="2" id="d1h-qe-aBX"/>
@@ -25,7 +25,41 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="105" y="314"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="DLy-8y-8GP">
+            <objects>
+                <controller id="jty-7c-R3J" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="QtN-mn-Lg0">
+                            <items>
+                                <imageView width="0.5" widthAdjustment="-4" height="44" alignment="left" verticalAlignment="center" image="sunny" contentMode="scaleAspectFit" id="Tbc-3V-6Md"/>
+                                <separator alignment="center" verticalAlignment="center" id="SU6-TD-ijG"/>
+                                <label width="0.5" widthAdjustment="-4" alignment="right" verticalAlignment="center" text="Sunny" numberOfLines="0" id="8Af-1E-OY2"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="Oq8-g9-KXe">
+                            <items>
+                                <label width="131" height="67.5" alignment="left" text="Who cares about the clouds when we're together?" numberOfLines="0" id="ZIj-ZM-acK">
+                                    <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="5" bottom="1"/>
+                        </group>
+                        <separator alignment="left" id="uju-Ca-uGd"/>
+                        <group width="1" alignment="left" hasDetent="YES" id="xPT-qf-2XY">
+                            <items>
+                                <label alignment="left" text="Just sing a song and bring the sunny weather." numberOfLines="0" id="kvF-he-jV0">
+                                    <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="1" bottom="1"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="413" y="305.25"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
