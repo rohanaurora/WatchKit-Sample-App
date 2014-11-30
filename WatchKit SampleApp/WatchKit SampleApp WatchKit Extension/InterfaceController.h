@@ -13,7 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet WKInterfaceImage *weatherImage;
 
+@property (weak, nonatomic) IBOutlet WKInterfaceSlider *weatherSlider;
 
-@property (weak, nonatomic) IBOutlet WKInterfaceSlider *sliderAction;
 
 @end

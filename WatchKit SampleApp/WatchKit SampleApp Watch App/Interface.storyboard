@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jty-7c-R3J">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
@@ -10,14 +10,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <imageView alignment="center" image="rainy" id="KK8-aT-DxT"/>
+                        <imageView width="100" widthAdjustment="1" height="0.5" alignment="center" image="rainy" contentMode="scaleAspectFit" id="KK8-aT-DxT"/>
                         <separator alignment="left" id="PSs-jv-TVI"/>
                         <label alignment="center" text="Weather Outside" id="5qS-q0-keh"/>
-                        <slider width="1" alignment="left" maximum="4" steps="4" id="d1h-qe-aBX"/>
+                        <slider width="1" alignment="left" maximum="4" steps="4" id="d1h-qe-aBX">
+                            <connections>
+                                <action selector="weatherSlider:" destination="AgC-eL-Hgc" id="5O4-BI-S1h"/>
+                            </connections>
+                        </slider>
                         <group width="1" alignment="left" hasDetent="YES" id="kyb-c7-WVF">
                             <items>
-                                <label alignment="left" text="Sunny" id="pwK-Mv-VvL"/>
-                                <label alignment="right" text="Rainy" id="dIS-NP-2Ot"/>
+                                <label alignment="left" text="Normal" id="pwK-Mv-VvL"/>
+                                <label alignment="right" text="Extreme" id="dIS-NP-2Ot"/>
                             </items>
                         </group>
                         <switch width="1" alignment="left" value="YES" title="Refresh" id="AQR-lD-19U">
@@ -28,10 +32,9 @@
                         <button width="1" alignment="left" title="Settings" id="T7S-ku-hSz"/>
                     </items>
                     <connections>
-                        <outlet property="controlImage" destination="d1h-qe-aBX" id="4AW-Lq-jQ7"/>
-                        <outlet property="sliderAction" destination="d1h-qe-aBX" id="VDg-05-xLB"/>
                         <outlet property="switchLabel" destination="AQR-lD-19U" id="DWZ-xY-7PW"/>
                         <outlet property="weatherImage" destination="KK8-aT-DxT" id="2Ak-UC-T0h"/>
+                        <outlet property="weatherSlider" destination="d1h-qe-aBX" id="I3l-W8-bDL"/>
                     </connections>
                 </controller>
             </objects>
@@ -67,6 +70,12 @@
                             <edgeInsets key="margins" left="5" right="5" top="1" bottom="1"/>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="ZIj-ZM-acK" id="0b1-0Y-Alt"/>
+                        <outlet property="extraDescriptionImage" destination="kvF-he-jV0" id="ibD-i1-4q9"/>
+                        <outlet property="smallLabel" destination="8Af-1E-OY2" id="0IQ-Ee-hZR"/>
+                        <outlet property="weatherImage" destination="Tbc-3V-6Md" id="1Bv-Jk-MrH"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="413" y="305.25"/>

@@ -12,8 +12,10 @@
 @interface WeatherDetailsController : WKInterfaceController
 
 @property (weak, nonatomic) IBOutlet WKInterfaceImage *weatherImage;
-@property (weak, nonatomic) IBOutlet WKInterfaceSlider *controlLabel;
-@property (weak, nonatomic) IBOutlet WKInterfaceSwitch *switchLabel;
 
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *smallLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *descriptionLabel;
+
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *extraDescriptionImage;
 
 @end

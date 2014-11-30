@@ -7,11 +7,12 @@
 //
 
 #import "InterfaceController.h"
+#import "WeatherDetailsController.h"
 
 
 @interface InterfaceController() {
 
-    int currentWeather;
+    int sliderValue;
 }
 @end
 
@@ -39,15 +40,28 @@
     NSLog(@"%@ did deactivate", self);
 }
 
-- (IBAction)switchAction:(BOOL)value {
+- (IBAction)weatherSlider:(float)value {
     
-    currentWeather = value;
+    sliderValue = 0;
+    sliderValue = value;
+    [self updateWeather];
+    NSLog(@"Slider value: %d",sliderValue);
 }
 
 -(void) updateWeather {
     
-    if 
-    
+    if (sliderValue == 0) {
+        [self.weatherImage setImageNamed:@"rainy"];
+    } else if (sliderValue == 1) {
+        [self.weatherImage setImageNamed:@"sun"];
+    } else if (sliderValue == 2) {
+        [self.weatherImage setImageNamed:@"snowy"];
+    } else if (sliderValue == 3) {
+        [self.weatherImage setImageNamed:@"windy"];
+    } else if (sliderValue == 4) {
+        [self.weatherImage setImageNamed:@"tornado"];
+    } else
+        return;
 }
 @end
 
