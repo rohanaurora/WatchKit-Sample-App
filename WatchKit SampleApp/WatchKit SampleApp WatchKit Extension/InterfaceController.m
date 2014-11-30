@@ -9,8 +9,10 @@
 #import "InterfaceController.h"
 
 
-@interface InterfaceController()
+@interface InterfaceController() {
 
+    int currentWeather;
+}
 @end
 
 
@@ -37,6 +39,16 @@
     NSLog(@"%@ did deactivate", self);
 }
 
+- (IBAction)switchAction:(BOOL)value {
+    
+    currentWeather = value;
+}
+
+-(void) updateWeather {
+    
+    if 
+    
+}
 @end
 
 

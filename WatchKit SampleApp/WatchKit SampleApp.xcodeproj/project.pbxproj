@@ -23,6 +23,7 @@
 		BD291FB21A1F09C500675F33 /* WatchKit SampleApp Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = BD291FB11A1F09C500675F33 /* WatchKit SampleApp Watch App.app */; };
 		BD291FB91A1F09C500675F33 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD291FB81A1F09C500675F33 /* Interface.storyboard */; };
 		BD291FBE1A1F09C500675F33 /* WatchKit SampleApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD291F9C1A1F09C500675F33 /* WatchKit SampleApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BDFA95EA1A2AE6150011782B /* WeatherDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA95E91A2AE6150011782B /* WeatherDetailsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		BD291FB11A1F09C500675F33 /* WatchKit SampleApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit SampleApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD291FB71A1F09C500675F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD291FB81A1F09C500675F33 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		BDFA95E81A2AE6150011782B /* WeatherDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDetailsController.h; sourceTree = "<group>"; };
+		BDFA95E91A2AE6150011782B /* WeatherDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDetailsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 			children = (
 				BD291FA41A1F09C500675F33 /* InterfaceController.h */,
 				BD291FA51A1F09C500675F33 /* InterfaceController.m */,
+				BDFA95E81A2AE6150011782B /* WeatherDetailsController.h */,
+				BDFA95E91A2AE6150011782B /* WeatherDetailsController.m */,
 				BD291FA71A1F09C500675F33 /* NotificationController.h */,
 				BD291FA81A1F09C500675F33 /* NotificationController.m */,
 				BD291FAA1A1F09C500675F33 /* GlanceController.h */,
@@ -416,6 +421,7 @@
 				BD291FA91A1F09C500675F33 /* NotificationController.m in Sources */,
 				BD291FA61A1F09C500675F33 /* InterfaceController.m in Sources */,
 				BD291FAC1A1F09C500675F33 /* GlanceController.m in Sources */,
+				BDFA95EA1A2AE6150011782B /* WeatherDetailsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

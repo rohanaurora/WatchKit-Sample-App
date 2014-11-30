@@ -13,24 +13,34 @@
                         <imageView alignment="center" image="rainy" id="KK8-aT-DxT"/>
                         <separator alignment="left" id="PSs-jv-TVI"/>
                         <label alignment="center" text="Weather Outside" id="5qS-q0-keh"/>
-                        <slider width="1" alignment="left" value="0.5" steps="2" id="d1h-qe-aBX"/>
+                        <slider width="1" alignment="left" maximum="4" steps="4" id="d1h-qe-aBX"/>
                         <group width="1" alignment="left" hasDetent="YES" id="kyb-c7-WVF">
                             <items>
                                 <label alignment="left" text="Sunny" id="pwK-Mv-VvL"/>
                                 <label alignment="right" text="Rainy" id="dIS-NP-2Ot"/>
                             </items>
                         </group>
-                        <switch width="1" alignment="left" value="YES" title="Refresh" id="AQR-lD-19U"/>
+                        <switch width="1" alignment="left" value="YES" title="Refresh" id="AQR-lD-19U">
+                            <connections>
+                                <action selector="switchAction:" destination="AgC-eL-Hgc" id="kLb-Fr-bF3"/>
+                            </connections>
+                        </switch>
                         <button width="1" alignment="left" title="Settings" id="T7S-ku-hSz"/>
                     </items>
+                    <connections>
+                        <outlet property="controlImage" destination="d1h-qe-aBX" id="4AW-Lq-jQ7"/>
+                        <outlet property="sliderAction" destination="d1h-qe-aBX" id="VDg-05-xLB"/>
+                        <outlet property="switchLabel" destination="AQR-lD-19U" id="DWZ-xY-7PW"/>
+                        <outlet property="weatherImage" destination="KK8-aT-DxT" id="2Ak-UC-T0h"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="105" y="314"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Weather Details Controller-->
         <scene sceneID="DLy-8y-8GP">
             <objects>
-                <controller id="jty-7c-R3J" customClass="InterfaceController">
+                <controller id="jty-7c-R3J" customClass="WeatherDetailsController">
                     <items>
                         <group width="1" alignment="left" hasDetent="YES" id="QtN-mn-Lg0">
                             <items>
