@@ -29,7 +29,11 @@
                                 <action selector="switchAction:" destination="AgC-eL-Hgc" id="kLb-Fr-bF3"/>
                             </connections>
                         </switch>
-                        <button width="1" alignment="left" title="Settings" id="T7S-ku-hSz"/>
+                        <button width="1" alignment="left" title="More Details" id="T7S-ku-hSz">
+                            <connections>
+                                <segue destination="jty-7c-R3J" kind="push" id="cB3-JR-2pG"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="switchLabel" destination="AQR-lD-19U" id="DWZ-xY-7PW"/>
@@ -40,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="105" y="314"/>
         </scene>
-        <!--Weather Details Controller-->
+        <!--WeatherDetailsController-->
         <scene sceneID="DLy-8y-8GP">
             <objects>
-                <controller id="jty-7c-R3J" customClass="WeatherDetailsController">
+                <controller identifier="WeatherDetailsController" id="jty-7c-R3J" customClass="WeatherDetailsController">
                     <items>
                         <group width="1" alignment="left" hasDetent="YES" id="QtN-mn-Lg0">
                             <items>
