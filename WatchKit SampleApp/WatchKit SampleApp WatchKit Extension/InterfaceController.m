@@ -13,8 +13,20 @@
 @interface InterfaceController() {
 
     int sliderValue;
+
 }
+
+typedef struct {
+    
+    int weatherIndex;
+   
+} moreDetailsData;
+
+@property (assign, nonatomic) moreDetailsData weatherIndex;
+
+
 @end
+
 
 
 @implementation InterfaceController
@@ -64,6 +76,15 @@
         return;
 }
 
+
+-(NSArray *)contextsForSegueWithIdentifier:(NSString *)segueIdentifier {
+    
+    if (segueIdentifier == @"MoreDetailsSegue") {
+        return
+    
+    return nil;
+    
+}
 @end
 
 

@@ -31,7 +31,7 @@
                         </switch>
                         <button width="1" alignment="left" title="More Details" id="T7S-ku-hSz">
                             <connections>
-                                <segue destination="jty-7c-R3J" kind="push" id="cB3-JR-2pG"/>
+                                <segue destination="jty-7c-R3J" kind="push" identifier="MoreDetailsSegue" id="cB3-JR-2pG"/>
                             </connections>
                         </button>
                     </items>
@@ -82,7 +82,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="413" y="305.25"/>
+            <point key="canvasLocation" x="336" y="313.75"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
