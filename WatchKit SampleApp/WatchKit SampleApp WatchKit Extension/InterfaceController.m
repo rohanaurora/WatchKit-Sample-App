@@ -76,15 +76,6 @@ typedef struct {
         return;
 }
 
-
--(NSArray *)contextsForSegueWithIdentifier:(NSString *)segueIdentifier {
-    
-    if (segueIdentifier == @"MoreDetailsSegue") {
-        return
-    
-    return nil;
-    
-}
 @end
 
 
