@@ -62,6 +62,7 @@ typedef struct {
 
 -(void) updateWeather {
     
+#TODO - Use Switch
     if (sliderValue == 0) {
         [self.weatherImage setImageNamed:@"rainy"];
     } else if (sliderValue == 1) {
