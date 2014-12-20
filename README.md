@@ -8,4 +8,6 @@
 
 2) Build the project Command (⌘) + R, after you choose the type of iOS Simulator.
 
+3) Select Hardware > External Display > Apple Watch
+
 
