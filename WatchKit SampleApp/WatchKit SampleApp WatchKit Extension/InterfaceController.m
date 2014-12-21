@@ -16,18 +16,7 @@
 
 }
 
-typedef struct {
-    
-    int weatherIndex;
-   
-} moreDetailsData;
-
-@property (assign, nonatomic) moreDetailsData weatherIndex;
-
-
 @end
-
-
 
 @implementation InterfaceController
 
@@ -40,16 +29,6 @@ typedef struct {
         
     }
     return self;
-}
-
-- (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
-    NSLog(@"%@ will activate", self);
-}
-
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    NSLog(@"%@ did deactivate", self);
 }
 
 - (IBAction)weatherSlider:(float)value {
@@ -78,6 +57,13 @@ typedef struct {
         return;
 }
 
+-(NSArray *)contextsForSegueWithIdentifier:(NSString *)segueIdentifier {
+//    if segueIdentifier = @"MoreDetailsSegue" {
+//        return sliderValue;
+//    }
+    
+    return nil;
+}
 @end
 
 
