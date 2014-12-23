@@ -12,24 +12,11 @@
 
 @interface InterfaceController() {
 
-    int sliderValue;
-
-}
+    int sliderValue; }
 
 @end
 
 @implementation InterfaceController
-
-- (instancetype)initWithContext:(id)context {
-    self = [super initWithContext:context];
-    if (self){
-        // Initialize variables here.
-        // Configure interface objects here.
-        NSLog(@"%@ initWithContext", self);
-        
-    }
-    return self;
-}
 
 - (IBAction)weatherSlider:(float)value {
     
