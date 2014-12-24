@@ -33,7 +33,7 @@
     if (sliderValue == 0) {
         [self.weatherImage setImageNamed:@"rainy"];
     } else if (sliderValue == 1) {
-        [self.weatherImage setImageNamed:@"sun"];
+        [self.weatherImage setImageNamed:@"sunny"];
     } else if (sliderValue == 2) {
         [self.weatherImage setImageNamed:@"snowy"];
     } else if (sliderValue == 3) {

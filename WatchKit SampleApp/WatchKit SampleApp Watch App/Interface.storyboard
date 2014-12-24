@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -13,12 +13,12 @@
                         <imageView width="100" widthAdjustment="1" height="0.5" alignment="center" image="rainy" contentMode="scaleAspectFit" id="KK8-aT-DxT"/>
                         <separator alignment="left" id="PSs-jv-TVI"/>
                         <label alignment="center" text="Weather Outside" id="5qS-q0-keh"/>
-                        <slider width="1" alignment="left" maximum="4" steps="4" id="d1h-qe-aBX">
+                        <slider width="1" alignment="left" continuous="YES" maximum="4" steps="4" id="d1h-qe-aBX">
                             <connections>
                                 <action selector="weatherSlider:" destination="AgC-eL-Hgc" id="5O4-BI-S1h"/>
                             </connections>
                         </slider>
-                        <group width="1" alignment="left" hasDetent="YES" id="kyb-c7-WVF">
+                        <group width="1" alignment="left" id="kyb-c7-WVF">
                             <items>
                                 <label alignment="left" text="Normal" id="pwK-Mv-VvL"/>
                                 <label alignment="right" text="Extreme" id="dIS-NP-2Ot"/>
@@ -49,14 +49,14 @@
             <objects>
                 <controller identifier="WeatherDetailsController" id="jty-7c-R3J" customClass="WeatherDetailsController">
                     <items>
-                        <group width="1" alignment="left" hasDetent="YES" id="QtN-mn-Lg0">
+                        <group width="1" alignment="left" id="QtN-mn-Lg0">
                             <items>
                                 <imageView width="0.5" widthAdjustment="-4" height="44" alignment="left" verticalAlignment="center" image="sunny" contentMode="scaleAspectFit" id="Tbc-3V-6Md"/>
                                 <separator alignment="center" verticalAlignment="center" id="SU6-TD-ijG"/>
                                 <label width="0.5" widthAdjustment="-4" alignment="right" verticalAlignment="center" text="Sunny" numberOfLines="0" id="8Af-1E-OY2"/>
                             </items>
                         </group>
-                        <group width="1" alignment="left" hasDetent="YES" id="Oq8-g9-KXe">
+                        <group width="1" alignment="left" id="Oq8-g9-KXe">
                             <items>
                                 <label width="131" height="67.5" alignment="left" text="Who cares about the clouds when we're together?" numberOfLines="0" id="ZIj-ZM-acK">
                                     <fontDescription key="font" type="italicSystem" pointSize="16"/>
@@ -65,7 +65,7 @@
                             <edgeInsets key="margins" left="5" right="5" top="5" bottom="1"/>
                         </group>
                         <separator alignment="left" id="uju-Ca-uGd"/>
-                        <group width="1" alignment="left" hasDetent="YES" id="xPT-qf-2XY">
+                        <group width="1" alignment="left" id="xPT-qf-2XY">
                             <items>
                                 <label alignment="left" text="Just sing a song and bring the sunny weather." numberOfLines="0" id="kvF-he-jV0">
                                     <fontDescription key="font" type="italicSystem" pointSize="16"/>
