@@ -12,7 +12,9 @@
 
 @interface InterfaceController() {
 
-    int sliderValue; }
+    int sliderValue;
+
+}
 
 @end
 
@@ -27,8 +29,6 @@
 }
 
 -(void) updateWeather {
-    
-#warning Need refactor
     
     if (sliderValue == 0) {
         [self.weatherImage setImageNamed:@"rainy"];
